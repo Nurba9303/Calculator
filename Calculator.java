@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Calculator {
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+       public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
 
         try {
             System.out.println("Калькулятор умеет выполнять операции: +, -, *, /");
@@ -19,7 +20,7 @@ public class Calculator {
             String operator = parts[1];
             int b = Integer.parseInt(parts[2]);
 
-            if (a < 1 || a > 10 || b < 1 || b > 10) {
+            if ((a < 1 || a > 10) || (b < 1 || b > 10)) {
                 throw new IllegalArgumentException("Числа должны быть от 1 до 10");
             }
 
